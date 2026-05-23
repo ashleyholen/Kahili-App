@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Betania Patmos';
+    src: url('font3.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Betania Patmos', sans-serif !important;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+

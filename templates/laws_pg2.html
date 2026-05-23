@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Laws Actions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+
+</head>
+
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+
+  <!-- Navbar -->
+  <div class="w3-bar w3-card w3-left-align w3-large" style="position:fixed; top:0; width:100%; z-index:999; height: 80px; display:flex; align-items:center; background-color: #48047d;">
+    
+    <!-- Background overlay image -->
+    <img src="{{ url_for('static', filename='pattern.jpg') }}" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0.2; z-index:0;">
+    
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-yellow" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button w3-padding-large" style="height: 80px; display:flex; align-items:center; background-color: #d3d3d3; position:relative; z-index:3; isolation:isolate;">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Home" style="height: 75px;">
+    </a>
+    <a href="http://127.0.0.1:5000/aboutus" class="w3-bar-item w3-button w3-padding-large" style="height: 80px; line-height: 80px; color: white; position:relative; z-index:2; background-color: transparent;">About</a>
+    <a href="http://127.0.0.1:5000/contact" class="w3-bar-item w3-button w3-padding-large" style="height: 80px; line-height: 80px; color: white; position:relative; z-index:2; background-color: transparent;">Contact Us</a>
+</div>
+
+
+ <!-- Back button -->
+ <div style="margin-top: 80px; background-color: #f0e6fa; padding: 12px 20px;">
+  <a href="/laws">
+    <button type="button" style="background-color: #48047d; color: white; border: none; padding: 8px 16px; border-radius: 4px;">← Back</button>
+  </a>
+</div>
+
+
+<!-- Header -->
+<header id="titleintro">
+    <div style="background-color: #f0e6fa; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; padding: 40px 20px; position:relative;">
+      <img src="{{ url_for('static', filename='laws_new2.png') }}" alt="Laws" style="width:20%">
+      <h1 style="font-size:80px; color:#48047d; margin:0; text-align:center;">LAWS</h1>
+      <div style="background-color: white; border-radius: 8px; padding: 24px 32px; max-width: 900px; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <p style="font-size:14px; line-height:1.8; margin:0;">Our laws are woven from the wisdom of those who came before us. Uphold these guiding principles to protect our people, our traditions, and the delicate balance of life.
+            
+            After completing a task, click on the feather and watch as you build your kāhili!</p>
+      </div>
+    </div>
+</header>
+
+
+<!-- First Card Line-->
+<div class="w3-row-padding" style="background-color: #f0e6fa; padding: 20px;">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex1.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Hawaiʻi State Capitol Public Hearings</h5>
+          <p class="card-text"><strong>O'ahu</strong></p>
+          <p class="card-text">Attend or follow public hearings to understand and engage with decisions shaping Hawaiʻi’s future.</p>
+        </div>
+        <div>
+          <a href="https://www.capitol.hawaii.gov/session/upcominghearingsfiltered.aspx" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex2.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Surfrider Foundation Oʻahu Chapter</h5>
+          <p class="card-text"><strong>O'ahu</strong></p>
+          <p class="card-text">Join campaigns and community efforts focused on coastal protection and environmental policy.</p>
+        </div>
+        <div>
+          <a href="https://oahu.surfrider.org/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex3.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Office of Hawaiian Affairs (OHA) Community Meetings</h5>
+          <p class="card-text"><strong>O'ahu</strong></p>
+          <p class="card-text">Learn how Native Hawaiian voices are represented in decisions about land, resources, and culture.</p>
+        </div>
+        <div>
+          <a href="https://www.oha.org/bot/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+</div>
+
+<!-- Second Card Line-->
+<div class="w3-row-padding" style="background-color: #f0e6fa; padding: 20px;">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex4.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Maui Nui Marine Resource Council</h5>
+          <p class="card-text"><strong>Maui</strong></p>
+          <p class="card-text">Participate in education and advocacy efforts focused on protecting Maui’s reefs and water quality.</p>
+        </div>
+        <div>
+          <a href="https://www.mauireefs.org/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex5.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Maui County Council Meetings</h5>
+          <p class="card-text"><strong>Maui</strong></p>
+          <p class="card-text">Engage with local government discussions on land use, tourism, and community planning.</p>
+        </div>
+        <div>
+          <a href="https://www.mauicounty.gov/159/Council-Meetings" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex6.webp') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Lahaina Community-Led Rebuilding Discussions</h5>
+          <p class="card-text"><strong>Maui</strong></p>
+          <p class="card-text">upport and learn from community-driven efforts guiding Lahaina’s recovery and future.</p>
+        </div>
+        <div>
+          <a href="https://www.mauirecovers.org/officeofrecovery" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+</div>
+
+<!-- Third Card Line-->
+<div class="w3-row-padding" style="background-color: #f0e6fa; padding: 20px;">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex7.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Hawaiʻi County Planning Department Meetingsn</h5>
+          <p class="card-text"><strong>Hawaiʻi Island (Big Island)</strong></p>
+          <p class="card-text">Learn how zoning and development decisions impact land, housing, and environment.</p>
+        </div>
+        <div>
+          <a href="https://www.planning.hawaiicounty.gov/about-us/planning-department-calendar" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex8.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Hoʻoponopono / Cultural Workshops</h5>
+          <p class="card-text"><strong>Hawaiʻi Island (Big Island)</strong></p>
+          <p class="card-text">Experience traditional conflict resolution and community healing practices rooted in Hawaiian values./p>
+        </div>
+        <div>
+          <a href="https://www.rashani.com/about/hooponopono" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex9.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">The Kohala Center</h5>
+          <p class="card-text"><strong>Hawaiʻi Island (Big Island)</strong></p>
+          <p class="card-text">Engage in programs focused on food systems, sustainability, and community resilience.</p>
+        </div>
+        <div>
+          <a href="https://kohalacenter.org/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+</div>
+
+
+<!-- Fourth Card Line-->
+<div class="w3-row-padding" style="background-color: #f0e6fa; padding: 20px;">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex10.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Kauaʻi Planning Commission Meetings</h5>
+          <p class="card-text"><strong>Kauaʻi</strong></p>
+          <p class="card-text">Follow or attend meetings that shape development and land use across the island.</p>
+        </div>
+        <div>
+          <a href="https://www.kauai.gov/Government/Boards-and-Commissions/Planning-Commission" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex11.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Surfrider Foundation Kauaʻi Chapter</h5>
+          <p class="card-text"><strong>Kauaʻi</strong></p>
+          <p class="card-text">Participate in campaigns protecting beaches, water quality, and coastal access.</p>
+        </div>
+        <div>
+          <a href="https://kauai.surfrider.org/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='lawsex12.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Kanu Hawaiʻi</h5>
+          <p class="card-text"><strong>Kauaʻi</strong></p>
+          <p class="card-text">Join a statewide network encouraging everyday actions that strengthen Hawaiʻi’s communities.</p>
+        </div>
+        <div>
+          <a href="https://www.kanuhawaii.org/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" style="background-color: #d3d3d3; margin: 0;">
+    <p class="col-md-4 mb-0 text-body-secondary"> </p>
+  
+    <a href="http://127.0.0.1:5000/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src="static/logo.png" alt="Kāhili Logo" style="height: 65px;">
+    </a>
+  
+  </footer>

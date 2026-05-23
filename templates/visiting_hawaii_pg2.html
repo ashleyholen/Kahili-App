@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Visiting Hawaiʻi Actions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+
+</head>
+
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+
+  <!-- Navbar -->
+  <div class="w3-bar w3-card w3-left-align w3-large" style="position:fixed; top:0; width:100%; z-index:999; height: 80px; display:flex; align-items:center; background-color: #48047d;">
+    
+    <!-- Background overlay image -->
+    <img src="{{ url_for('static', filename='pattern.jpg') }}" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0.2; z-index:0;">
+    
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-yellow" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button w3-padding-large" style="height: 80px; display:flex; align-items:center; background-color: #d3d3d3; position:relative; z-index:3; isolation:isolate;">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Home" style="height: 75px;">
+    </a>
+    <a href="http://127.0.0.1:5000/aboutus" class="w3-bar-item w3-button w3-padding-large" style="height: 80px; line-height: 80px; color: white; position:relative; z-index:2; background-color: transparent;">About</a>
+    <a href="http://127.0.0.1:5000/contact" class="w3-bar-item w3-button w3-padding-large" style="height: 80px; line-height: 80px; color: white; position:relative; z-index:2; background-color: transparent;">Contact Us</a>
+</div>
+
+
+ <!-- Back button -->
+ <div style="margin-top: 80px; background-color: #f0e6fa; padding: 12px 20px;">
+  <a href="/visitinghawaii">
+    <button type="button" style="background-color: #48047d; color: white; border: none; padding: 8px 16px; border-radius: 4px;">← Back</button>
+  </a>
+</div>
+
+
+<!-- Header -->
+<header id="titleintro">
+    <div style="background-color: #f0e6fa; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; padding: 40px 20px; position:relative;">
+      <img src="{{ url_for('static', filename='visiting_hawaii_new2.png') }}" alt="Visiting Hawaiʻi" style="width:20%">
+      <h1 style="font-size:80px; color:#48047d; margin:0; text-align:center;">VISITING HAWAIʻI</h1>
+      <div style="background-color: white; border-radius: 8px; padding: 24px 32px; max-width: 900px; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <p style="font-size:14px; line-height:1.8; margin:0;">Extend warm hospitality to every guest, welcoming them with open arms and the spirit of aloha. In each visit, share the rich culture and the deep-rooted respect for our ʻāina.
+            
+            After completing a task, click on the feather and watch as you build your kāhili!</p>
+      </div>
+    </div>
+</header>
+
+
+<!-- First Card Line-->
+<div class="w3-row-padding" style="background-color: #f0e6fa; padding: 20px;">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex1.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Iolani Palace</h5>
+          <p class="card-text"><strong>O'ahu</strong></p>
+          <p class="card-text">Learn the history of the Hawaiian Kingdom to better understand the land you are visiting.</p>
+        </div>
+        <div>
+          <a href="https://www.iolanipalace.org/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex2.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Byodo-In Temple</h5>
+          <p class="card-text"><strong>O'ahu</strong></p>
+          <p class="card-text">Visit a peaceful, respectful space that encourages quiet reflection and cultural appreciation.</p>
+        </div>
+        <div>
+          <a href="https://byodo-in.com/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex3.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Makapuʻu Lighthouse Trail</h5>
+          <p class="card-text"><strong>O'ahu</strong></p>
+          <p class="card-text">Enjoy coastal views on a maintained trail while staying on paths and respecting the landscape.</p>
+        </div>
+        <div>
+          <a href="https://dlnr.hawaii.gov/dsp/hiking/oahu/makapuu-point-lighthouse-trail/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+</div>
+
+<!-- Second Card Line-->
+<div class="w3-row-padding" style="background-color: #f0e6fa; padding: 20px;">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex4.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">ʻĪao Valley State Monument</h5>
+          <p class="card-text"><strong>Maui</strong></p>
+          <p class="card-text">Visit a sacred valley while learning its cultural and historical significance.</p>
+        </div>
+        <div>
+          <a href="https://dlnr.hawaii.gov/dsp/parks/maui/iao-valley-state-monument/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex5.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Lahaina Restoration Sites</h5>
+          <p class="card-text"><strong>Maui</strong></p>
+          <p class="card-text">Engage with efforts to respectfully support and learn from Lahaina’s cultural rebuilding.</p>
+        </div>
+        <div>
+          <a href="https://www.lahainarestoration.org/index.html" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex6.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Twin Falls (Road to Hāna)</h5>
+          <p class="card-text"><strong>Maui</strong></p>
+          <p class="card-text">Visit early, respect private land boundaries, and support local vendors along the way.</p>
+        </div>
+        <div>
+          <a href="https://mauioceancenter.com/landmark/why-twin-falls-in-maui-is-a-must-see-stop-on-the-road-to-hana/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+</div>
+
+<!-- Third Card Line-->
+<div class="w3-row-padding" style="background-color: #f0e6fa; padding: 20px;">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex7.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Mauna Kea Visitor Information Station</h5>
+          <p class="card-text"><strong>Hawaiʻi Island (Big Island)</strong></p>
+          <p class="card-text">Learn the cultural significance of Mauna Kea while visiting respectfully and responsibly.</p>
+        </div>
+        <div>
+          <a href="https://hilo.hawaii.edu/maunakea/visitor-information/station" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex8.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Pololū Valley Lookout</h5>
+          <p class="card-text"><strong>Hawaiʻi Island (Big Island)</strong></p>
+          <p class="card-text">Take in the view while respecting trail conditions and avoiding overcrowding.</p>
+        </div>
+        <div>
+          <a href="https://www.gohawaii.com/islands/hawaii-big-island/regions/kohala/pololu-valley-lookout" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex9.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Richardson Ocean Park</h5>
+          <p class="card-text"><strong>Hawaiʻi Island (Big Island)</strong></p>
+          <p class="card-text">Experience a local beach while keeping it clean and respecting wildlife.</p>
+        </div>
+        <div>
+          <a href="https://volcanoartcenter.org/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+</div>
+
+
+<!-- Fourth Card Line-->
+<div class="w3-row-padding" style="background-color: #f0e6fa; padding: 20px;">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex10.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Waimea Canyon Lookouts</h5>
+          <p class="card-text"><strong>Kauaʻi</strong></p>
+          <p class="card-text">Explore designated viewpoints while preserving fragile canyon ecosystems.</p>
+        </div>
+        <div>
+          <a href="https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-canyon-state-park/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex11.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Anini Beach</h5>
+          <p class="card-text"><strong>Kauaʻi</strong></p>
+          <p class="card-text">Enjoy calmer waters while practicing reef-safe and respectful behavior.</p>
+        </div>
+        <div>
+          <a href="https://www.kauai.com/anini-beach" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="card" style="max-width: 250px; margin: 0 auto; position: relative;">
+      <div style="height: 150px; overflow: hidden;">
+        <img src="{{ url_for('static', filename='visitinghawaiiex12.jpg') }}" class="card-img-top" alt="..." style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="card-body" style="min-height: 275px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h5 class="card-title">Smith Family Garden Luau</h5>
+          <p class="card-text"><strong>Kauaʻi</strong></p>
+          <p class="card-text">Choose luaus that emphasize authentic storytelling and cultural education.</p>
+        </div>
+        <div>
+          <a href="https://www.smithskauai.com/garden-luau/" class="btn btn-primary" style="background-color: #48047d; border: none;">Let's go</a>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='feather.jpg') }}" alt="feather" style="position:absolute; bottom:8px; right:8px; width:45px;">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" style="background-color: #d3d3d3; margin: 0;">
+    <p class="col-md-4 mb-0 text-body-secondary"> </p>
+  
+    <a href="http://127.0.0.1:5000/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src="static/logo.png" alt="Kāhili Logo" style="height: 65px;">
+    </a>
+  
+  </footer>

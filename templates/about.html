@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>About Kāhili</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+
+</head>
+
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+
+  <!-- Navbar -->
+  <div class="w3-bar w3-card w3-left-align w3-large" style="position:fixed; top:0; width:100%; z-index:999; height: 80px; display:flex; align-items:center; background-color: #48047d;">
+    
+    <!-- Background overlay image -->
+    <img src="{{ url_for('static', filename='pattern.jpg') }}" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0.2; z-index:0;">
+    
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-yellow" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button w3-padding-large" style="height: 80px; display:flex; align-items:center; background-color: #d3d3d3; position:relative; z-index:3; isolation:isolate;">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Home" style="height: 75px;">
+    </a>
+    <a href="http://127.0.0.1:5000/aboutus" class="w3-bar-item w3-button w3-padding-large" style="height: 80px; line-height: 80px; color: white; position:relative; z-index:2; background-color: transparent;">About</a>
+    <a href="http://127.0.0.1:5000/contact" class="w3-bar-item w3-button w3-padding-large" style="height: 80px; line-height: 80px; color: white; position:relative; z-index:2; background-color: transparent;">Contact Us</a>
+</div>
+
+ <!-- Back button -->
+<div style="margin-top: 80px; background-color: #f0e6fa; padding: 12px 20px;">
+  <a href="/">
+    <button type="button" style="background-color: #48047d; color: white; border: none; padding: 8px 16px; border-radius: 4px;">← Back</button>
+  </a>
+</div>
+
+<!-- Header -->
+<header id="titleintro">
+  <div style="background-color: #f0e6fa; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; padding: 40px 20px;">
+    
+    <h1 style="font-size:80px; color:#48047d; margin:0; text-align:center;">OUR STORY</h1>
+    <h3 style="font-family:'Betania Patmos', sans-serif; font-weight:bold; color:black; margin:0; text-align:center;">The cultural and sustainable significance of our brand</h3>
+
+    <!--images side by side -->
+    <div style="display:flex; gap:12px; justify-content:center; width:100%; max-width:900px;">
+      <img src="{{ url_for('static', filename='about1.jpg') }}" alt="Image 1" style="width:23%; height:200px; object-fit:cover;">
+      <img src="{{ url_for('static', filename='about2.jpg') }}" alt="Image 2" style="width:23%; height:200px; object-fit:cover;">
+      <img src="{{ url_for('static', filename='about3.jpg') }}" alt="Image 3" style="width:23%; height:200px; object-fit:cover;">
+    </div>
+
+    <div style="background-color: white; border-radius: 8px; padding: 24px 32px; max-width: 900px; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <p style="font-size:14px; line-height:1.8; margin:0;">Kāhili, a traditional feather standard created for Ali'i and/or family of the Hawaiian Islands to represent mana, instilling a sense of dignity and regal presence. To create a Kāhili takes thousands of feathers, which are plucked in small amounts from birds of Hawai'i, called a release method. This method is used to sustainably catch a bird, gather a couple of feathers, release and catch another, to keep the feather source in Hawai'i stable, rather than taking all the feathers of a single bird. The representation of a Kāhili, and it's sustainable building process, is a symbol that is suited to bring awareness, and set a baseline of the possible ways to save Hawai'i.</p>
+    </div>
+  </div>
+</header>
+
+<!-- Mission Statement -->
+<div style="background-color: #48047d; padding: 40px 20px; text-align: center;">
+  <h2 style="font-family:'Betania Patmos', sans-serif; color: white; font-weight: bold; margin-bottom: 16px;">MISSION STATEMENT</h2>
+  <p style="font-family:'Betania Patmos', sans-serif; color: white; font-size: 18px; max-width: 800px; margin: 0 auto; line-height: 1.8;">Kāhili is an app designed to foster sustainable tourism in Hawaiʻi by providing cultural insights and actions for conservation, empowering tourists to actively contribute to the preservation of Hawaii's natural and cultural heritage.</p>
+</div>
+ 
+<!-- Footer -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" style="background-color: #d3d3d3; margin: 0;">
+  <p class="col-md-4 mb-0 text-body-secondary"> </p>
+
+  <a href="http://127.0.0.1:5000/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <img src="static/logo.png" alt="Kāhili Logo" style="height: 65px;">
+  </a>
+
+</footer>
