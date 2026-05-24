@@ -1,4 +1,4 @@
-# <font color="purple">E komo mai</font> <img width="72" height="142" alt="logo2" src="https://github.com/user-attachments/assets/d2914168-989f-4d39-8eb8-79cc52d13eb1" />
+# E komo mai! <img width="72" height="142" alt="logo2" src="https://github.com/user-attachments/assets/d2914168-989f-4d39-8eb8-79cc52d13eb1" />
  
 ## This is Kāhili - A Web Application to Foster Sustainable Tourism Across the Hawaiian Islands
 
