@@ -5,7 +5,7 @@
 <img width="567" height="440" alt="logo" src="https://github.com/user-attachments/assets/6633de35-6e83-413b-99fa-d2c40af7e31a" />
 
 ## Introduction 
-### Hawaiʻi Needs Our Help
+### Protecting Hawaiʻi
 Kāhili is is an application designed to foster sustainable tourism in Hawaiʻi by providing cultural insights and actions for conservation, empowering tourists to actively contribute to the preservation of Hawaiʻi's natural and cultural heritage. Hawaiʻi is home to one of the most unique and sacred ecosystems in the world. The land (ʻāina) and ocean (kai) are deeply interconnected with the Native Hawaiian identity and spirituality. The biodiversity of Hawaiʻi is significant environmentally but also is the foundation of tradition and culture for generations. The Hawaiian Islands are in danger, and action must be taken now. Nearly 50% of Hawaiʻi’s coral reefs have been lost or severely degraded (NOAA, 2020), more than 90% of native ecosystems have been altered (Hawaiʻi DLNR), and Hawaiʻi is known is the “endangered species capital of the world” with over 500 federally listed threatened or endangered species (U.S. Fish and Wildlife Service). Action needs to be taken now to protect Hawaiʻi, and it starts with us.
 
 ### Destructive Tourism
