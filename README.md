@@ -24,3 +24,7 @@ Until this project, Kāhili was merely a concept – but one that was deeply and
 
 ### What's Next
 There are many plans in place for the advancement of Kāhili. First, the logos on the homepage are to be replaced with the artwork of local artists. Also, the application is to open with a Google Maps API feature where users input their address and the nearest sustainable travel locations populate with directions. Importantly, the application is to have user accounts and a database where after each activity completed, the user gains a ”feather” to add to their personal “Kāhili”, creating an interactive and incentivized experience. I would like to partner with local sustainable organizations to where if we direct users to them, the organization could provide discounts to users. Content and UI will continually develop and be enhanced.
+
+## Presentations 
+[Uploading Kahili.pdf…]()
+
