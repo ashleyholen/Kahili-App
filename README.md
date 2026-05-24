@@ -1,4 +1,6 @@
-# E komo mai 
+# E komo mai <img width="72" height="142" alt="logo2" src="https://github.com/user-attachments/assets/d2914168-989f-4d39-8eb8-79cc52d13eb1" />
+ 
 ## This is Kāhili - A Web Application to Foster Sustainable Tourism Across the Hawaiian Islands
 
-<img width="450" height="300" alt="logo" src="https://github.com/user-attachments/assets/16a4cd9e-973f-4c18-b7af-9d49edaded57" />
+<img width="567" height="440" alt="logo" src="https://github.com/user-attachments/assets/6633de35-6e83-413b-99fa-d2c40af7e31a" />
+
